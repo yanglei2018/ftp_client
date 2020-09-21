@@ -464,7 +464,7 @@ public class FTPTransfer {
                 String desname = localFile+name;//拼接成本地目录
                 System.out.println(desname);
 
-                ftp.get(name,desname);//下载文件
+                ftp.get(name,desname,true);//下载文件
             }
         }
 

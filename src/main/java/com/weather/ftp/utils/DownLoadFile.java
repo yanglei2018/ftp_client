@@ -20,7 +20,7 @@ public class DownLoadFile {
 
     @Scheduled(initialDelay = 10000, fixedDelay = 3600000)//设置初始时间，间隔时间
     public void timerInit(){
-        logger.debug("FTP下载定时任务正在执行");
+        logger.info("FTP下载定时任务正在执行");
         System.out.println("执行时间:" + dateFormat.format(new Date()));
         try {
             FTPTransfer.down();
